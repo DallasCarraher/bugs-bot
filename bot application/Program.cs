@@ -27,7 +27,6 @@ namespace bot_application
 
             #region Msg Reception
             _client.MessageReceived += MessageReceived;
-            _client.MessageReceived += DirectMessageReceived;
             #endregion
 
             await Task.Delay(-1);
