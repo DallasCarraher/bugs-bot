@@ -5,8 +5,10 @@
 ### Features
 
 - **Logs** Added more descriptive logs in console for better readability and understanding. Added Severity categories including Critical, Warning, Info, and Verbose, each with their respective console color codes.
-- **Pong!** !Ping returns Pong! :)
-
 ```C#
 Console.WriteLine($" [{DateTime.Now}] ({message.Severity}) -> {message.Source}: {message.Message}");
 ```
+
+- **Pong!** !Ping returns Pong! :)
+
+
