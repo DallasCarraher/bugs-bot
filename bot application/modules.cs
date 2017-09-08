@@ -21,23 +21,50 @@ public class General : ModuleBase<SocketCommandContext>
             emb.AddField(target =>
             {
                 target.Name = "Eh, What's up Doc?";
-                target.Value = "List of Available Commands\n\n";
+                target.Value = "Here's a list of all Commands";
             });
 
             emb.AddField(target =>
             {
-                target.Name = "       ";
-                target.Value = "      ";
+                target.Name = "​";
+                target.Value = "​";
             });
-
 
             emb.AddField(target =>
             {
-                target.Name = ".Help  or  .?";
-                target.Value = "Lists all available user commands";
+                target.Name = "Command Prefix  ' . '";
+                target.Value = "​";
             });
 
-            
+            emb.AddField(target =>
+            {
+                target.Name = "Help  or  ?";
+                target.Value = "Lists all available user commands.";
+            });
+
+            emb.AddField(target =>
+            {
+                target.Name = "Say [msg]";
+                target.Value = "Repeats a message.";
+            });
+
+            emb.AddField(target =>
+            {
+                target.Name = "User [userid]";
+                target.Value = "Returns information about the current user, or a user through parameter.";
+            });
+
+            emb.AddField(target =>
+            {
+                target.Name = "Guild [guildid]";
+                target.Value = "Returns information about the current guild, or a specific guild through parameter.";
+            });
+
+            emb.AddField(target =>
+            {
+                target.Name = "Square [int]";
+                target.Value = "Squares a number.";
+            });
 
             //emb.WithImageUrl("https://pbs.twimg.com/media/CybWy_WW8AAYyZ4.jpg");
             emb.Build();
