@@ -3,4 +3,4 @@
 
 Ver. 1.0.x
 
-Discord Bot in C# using Discord.NET api wrapper library packages.
+Discord Bot in C# using Discord.NET api wrapper.
