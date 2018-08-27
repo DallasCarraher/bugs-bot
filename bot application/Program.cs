@@ -61,13 +61,13 @@ namespace bot_application
             client = new DiscordSocketClient(_config);
             commands = new CommandService();
 
-            string token = "MzE3NzUxMDcwNjQ0MjQwMzg0.DInOuQ.Jv2f8QYQXxlcrk3f736TZcGifRA";
+            string token = "MzE3NzUxMDcwNjQ0MjQwMzg0.DmUadw.FFvyYWBUQ5nZr7o_gPie4JDAkU4";
 
             service = new ServiceCollection().BuildServiceProvider();
 
             await InstallCommands();
 
-            await client.LoginAsync(TokenType.Bot, token);
+            await client.LoginAsync(TokenType.Bot, token, true);
             await client.StartAsync();
 
             #endregion
